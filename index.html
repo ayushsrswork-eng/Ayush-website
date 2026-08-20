@@ -158,6 +158,7 @@
     @keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
     .hero-name { font-family: var(--font-head); font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 800; color: var(--white); line-height: 1.0; letter-spacing: -2px; margin-bottom: 12px; }
     .hero-name .accent { color: var(--accent); }
+    @media (min-width: 769px) { .hero-name .accent { display: block; } }
     .hero-title { font-size: 1.15rem; font-weight: 400; color: var(--muted); margin-bottom: 28px; letter-spacing: 0.3px; }
     .hero-title strong { color: var(--text); font-weight: 600; }
     .hero-desc { font-size: 1rem; color: var(--muted); max-width: 520px; line-height: 1.8; margin-bottom: 40px; }
@@ -321,6 +322,7 @@
       .contact-inner { grid-template-columns: 1fr; gap: 50px; }
     }
     @media (max-width: 768px) {
+      .hero-name { white-space: nowrap; font-size: clamp(2.4rem, 9vw, 3rem); letter-spacing: -1px; }
       body { padding-bottom: 60px; }
       .float-wa-btn { width: 48px; height: 48px; bottom: 16px; right: 16px; }
       .float-wa-btn svg { width: 24px; height: 24px; }
@@ -381,7 +383,7 @@
     <div class="hero-inner">
       <div class="hero-content">
         <div class="hero-badge fade-in">Available for Projects</div>
-        <h1 class="hero-name fade-in fade-in-delay-1">Ayush<br /><span class="accent">Patidar</span></h1>
+        <h1 class="hero-name fade-in fade-in-delay-1">Ayush <span class="accent">Patidar</span></h1>
         <p class="hero-title fade-in fade-in-delay-2"><strong>SEO Strategist</strong> · AI SEO · AEO · GEO Expert</p>
         <p class="hero-desc fade-in fade-in-delay-3">
           I help brands get found on Google, in AI chatbots, and through voice search. Specialising in next-generation SEO strategies that future-proof your digital presence in the age of AI.
